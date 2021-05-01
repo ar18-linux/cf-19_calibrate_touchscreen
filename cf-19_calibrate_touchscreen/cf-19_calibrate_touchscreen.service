@@ -1,0 +1,8 @@
+[Unit]
+Description=Calibrate touchscreen for the cf-19 toughbook
+ 
+[Service]
+ExecStart=/opt/ar18/cf-19_calibrate_touchscreen/cf-19_calibrate_touchscreen.sh
+ 
+[Install]
+WantedBy=multi-user.target
