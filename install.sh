@@ -1,5 +1,5 @@
 #!/bin/bash
-# ar18
+# ar18#
 
 # Script template version 2021-06-13
 # Make sure some modification to LD_PRELOAD will not alter the result or outcome in any way
@@ -56,6 +56,7 @@ if [ -d "/home/${user_name}/.config/ar18/autostarts" ]; then
   echo "LD_PRELOAD='' ${install_dir}/${module_name}/${module_name}.sh" >>"${auto_start}"
   chmod +x "${auto_start}"
 fi
+
 ##################################SCRIPT_END###################################
 # Restore old shell values
 set +x
