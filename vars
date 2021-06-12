@@ -1,4 +1,8 @@
-if [ -z "${install_dir+x}" ]; then
+module_name="cf-19_calibrate_touchscreen"
+
+if [ ! -v user_name ]; then
+  user_name="$(logname)"
+fi
+if [ ! -v install_dir ]; then
   install_dir="/opt/ar18"
 fi
-module_name="cf-19_calibrate_touchscreen"
